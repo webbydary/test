@@ -1,4 +1,3 @@
-// fade-in on scroll
 const items = document.querySelectorAll('.fade');
 
 const observer = new IntersectionObserver((entries) => {
@@ -12,5 +11,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 items.forEach(el => observer.observe(el));
-
-// header smooth UX (optional enhancement placeholder)
