@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Портфолио</title>
+
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,22 +12,18 @@
 <body>
 
 <header class="header">
-  <button class="header__back">
-    ← Назад
-  </button>
+  <button class="header__back">← Назад</button>
 
   <div class="header__right">
     <span class="header__name">Ефимова Дарья</span>
-    <button class="header__resume">
-      Резюме →
-    </button>
+    <button class="header__resume">Резюме →</button>
   </div>
 </header>
 
 <main class="page">
 
   <!-- HERO -->
-  <section class="card hero">
+  <section class="card hero fade">
     <div class="hero__content">
       <h1 class="h1">Ефимова Дарья</h1>
       <p class="body muted">24 года, Москва</p>
@@ -42,7 +39,7 @@
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="card section fade">
+  <section class="card fade">
     <h2 class="h2">Мой опыт</h2>
 
     <p class="body muted mt16">
@@ -58,78 +55,83 @@
     </p>
   </section>
 
-  <!-- CASE HEADER -->
-  <section class="case-header fade">
-    <div class="case-header__text">
-      <h1 class="h1">Samolov</h1>
+  <!-- CASES SECTION WRAPPER (NEW BACKGROUND BLOCK) -->
+  <section class="section-wrapper fade">
 
-      <p class="body muted mt16">
-        Март 2024 — Май 2026 (2 года и 3 месяца)
-      </p>
-
-      <p class="body muted">
-        Онлайн-платформа для обучения и развития сотрудников, HR-tech, Ed-tech
-      </p>
-
-      <p class="body muted">
-        Должность: Middle Product Designer (UX/UI Designer)
-      </p>
-    </div>
-
-    <div class="case-header__img"></div>
-  </section>
-
-  <!-- CASE CARDS -->
-  <section class="cases">
-
-    <a href="#" class="case-card fade">
-      <div class="case-card__img"></div>
-
-      <div class="case-card__content">
-        <span class="tag">продуктовый дизайн</span>
-
-        <h2 class="h2 mt32">Обучение и отчёт по результатам</h2>
+    <!-- CASE HEADER -->
+    <div class="case-header">
+      <div class="case-header__text">
+        <h1 class="h1">Samolov</h1>
 
         <p class="body muted mt16">
-          Спроектировала сквозной процесс обучения для двух ролей: сотрудник проходит курс, HR отслеживает результаты и прогресс команды
+          Март 2024 — Май 2026 (2 года и 3 месяца)
         </p>
 
-        <button class="btn">Подробнее →</button>
+        <p class="body muted">
+          Онлайн-платформа для обучения и развития сотрудников, HR-tech, Ed-tech
+        </p>
+
+        <p class="body muted">
+          Должность: Middle Product Designer (UX/UI Designer)
+        </p>
       </div>
-    </a>
 
-    <a href="#" class="case-card fade">
-      <div class="case-card__img"></div>
+      <div class="case-header__img"></div>
+    </div>
 
-      <div class="case-card__content">
-        <span class="tag">продуктовый дизайн</span>
-        <h2 class="h2 mt32">Кейс 2</h2>
-        <p class="body muted mt16">Описание кейса</p>
-        <button class="btn">Подробнее →</button>
-      </div>
-    </a>
+    <!-- CASE CARDS -->
+    <div class="cases">
 
-    <a href="#" class="case-card fade">
-      <div class="case-card__img"></div>
+      <a href="#" class="case-card">
+        <div class="case-card__img"></div>
 
-      <div class="case-card__content">
-        <span class="tag">продуктовый дизайн</span>
-        <h2 class="h2 mt32">Кейс 3</h2>
-        <p class="body muted mt16">Описание кейса</p>
-        <button class="btn">Подробнее →</button>
-      </div>
-    </a>
+        <div class="case-card__content">
+          <span class="tag">продуктовый дизайн</span>
 
-    <a href="#" class="case-card fade">
-      <div class="case-card__img"></div>
+          <h2 class="h2 mt32">Обучение и отчёт по результатам</h2>
 
-      <div class="case-card__content">
-        <span class="tag">продуктовый дизайн</span>
-        <h2 class="h2 mt32">Кейс 4</h2>
-        <p class="body muted mt16">Описание кейса</p>
-        <button class="btn">Подробнее →</button>
-      </div>
-    </a>
+          <p class="body muted mt16">
+            Спроектировала сквозной процесс обучения для двух ролей: сотрудник проходит курс, HR отслеживает результаты и прогресс команды
+          </p>
+
+          <button class="btn">Подробнее →</button>
+        </div>
+      </a>
+
+      <a href="#" class="case-card">
+        <div class="case-card__img"></div>
+
+        <div class="case-card__content">
+          <span class="tag">продуктовый дизайн</span>
+          <h2 class="h2 mt32">Кейс 2</h2>
+          <p class="body muted mt16">Описание кейса</p>
+          <button class="btn">Подробнее →</button>
+        </div>
+      </a>
+
+      <a href="#" class="case-card">
+        <div class="case-card__img"></div>
+
+        <div class="case-card__content">
+          <span class="tag">продуктовый дизайн</span>
+          <h2 class="h2 mt32">Кейс 3</h2>
+          <p class="body muted mt16">Описание кейса</p>
+          <button class="btn">Подробнее →</button>
+        </div>
+      </a>
+
+      <a href="#" class="case-card">
+        <div class="case-card__img"></div>
+
+        <div class="case-card__content">
+          <span class="tag">продуктовый дизайн</span>
+          <h2 class="h2 mt32">Кейс 4</h2>
+          <p class="body muted mt16">Описание кейса</p>
+          <button class="btn">Подробнее →</button>
+        </div>
+      </a>
+
+    </div>
 
   </section>
 
